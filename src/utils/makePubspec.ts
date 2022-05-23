@@ -2,7 +2,7 @@ import yaml from 'js-yaml'
 
 export function makePubspec(
   input: string,
-  pkg: string | { git: { url: string; path: string } }
+  pkg: string | { git: { url: string; path: string } } | { path: string }
 ): string {
   const data = (yaml.load(input) as any) ?? {}
 

@@ -11,7 +11,7 @@ mv "$(basename "$ENTRYPOINT_PATH")" entrypoint.dart
 cp "$BUILDER/bootstrap.dart.txt" bootstrap.dart
 
 # Build binary file
-pub get
+dart pub get
 dart compile exe bootstrap.dart -o bootstrap
 
 # Make cache folder & copy bootstrap file into it

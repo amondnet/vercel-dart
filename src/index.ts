@@ -15,7 +15,7 @@ import process from 'process'
 
 import {
   DEFAULT_DART_CHANNEL,
-  DEFAULT_DART_VERSION,
+  DEFAULT_DART_VERSION, RUNTIME_LOCAL_PKG,
   RUNTIME_PKG,
   SDK_VERSION,
 } from './utils/constants'
@@ -67,7 +67,7 @@ async function build({
   })
   await fs.writeFile(
     path.join(tmp, 'pubspec.yaml'),
-    makePubspec(pubspec, RUNTIME_PKG),
+    makePubspec(pubspec, RUNTIME_LOCAL_PKG),
     'utf-8'
   )
 
