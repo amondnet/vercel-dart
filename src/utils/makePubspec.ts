@@ -10,7 +10,7 @@ export function makePubspec(
     ...data,
     dependencies: {
       ...(data?.dependencies ?? {}),
-      vercel_dart: pkg,
+      vercel_dart_runtime: pkg,
     },
   })
 }

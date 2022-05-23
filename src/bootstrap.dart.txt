@@ -1,6 +1,6 @@
 /// named .txt to avoid import errors
 
-import 'package:vercel_dart/runtime.dart' show handle;
+import 'package:vercel_dart_runtime/vercel_dart_runtime.dart' show handle;
 import 'entrypoint.dart' show handler;
 
 void main() => handle(handler);
