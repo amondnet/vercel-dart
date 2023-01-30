@@ -15,5 +15,6 @@ dart pub get
 dart compile exe bootstrap.dart -o bootstrap
 
 # Make cache folder & copy bootstrap file into it
+echo $DIST
 mkdir -p $DIST
 cp bootstrap $DIST

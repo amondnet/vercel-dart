@@ -20,16 +20,16 @@ Response handler(Request req) {
 }
 ```
 
-Next, select the `vercel-dart` runtime to handle serverless dart functions in your `vercel.json` file.
+Next, select the `vercel-dart-runtime` runtime to handle serverless dart functions in your `vercel.json` file.
 
 ```json
 {
   "functions": {
-    "api/**/*.dart": { "runtime": "vercel-dart@1.1.0" }
+    "api/**/*.dart": { "runtime": "vercel-dart-runtime@1.1.1" }
   }
 }
 ```
-**Demo:** [vercel-dart.vercel.app/api/hello](https://vercel-dart.vercel.app/api/hello)
+**Demo:** [vercel-dart-runtime.vercel.app/api/hello](https://vercel-dart-runtime.vercel.app/api/hello)
 
 ## Examples
 
