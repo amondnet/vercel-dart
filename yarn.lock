@@ -186,6 +186,11 @@
     escape-string-regexp "^4.0.0"
     resolve "^1.19.0"
 
+"@iarna/toml@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
+  integrity sha512-FmuxfCuolpLl0AnQ2NHSzoUKWEJDFl63qXjzdoWBVyFCXzMGm1spBzk7LeHNoVCiWCF7mRVms9e6jEV9+MoPbg==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -260,20 +265,23 @@
   dependencies:
     "@types/node" "*"
 
-"@vercel/build-utils@^2.8.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-2.9.0.tgz#2bb5def3df7080a892d86e25c7bb1af35f2b8964"
-  integrity sha512-cuLqv7dI1v8TqIJYu3nR4S9FAJZoGPu3ZfV+y498gVUDpwtcAQ5sdWkiqS7jPIHG03APy6rR2cEO7sYm6Ydudw==
+"@vercel/build-utils@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.0.0.tgz#7cfe1347da1b9ee663d7a6c951c7ce894848fe06"
+  integrity sha512-2AoVcDUyQCj516KrRNH92NeKI+KZGnVGjHkcb+VcXxGspYpKL/gC+AdFtC05qbgxX1e8U95Yd8ROucTftHErWw==
 
-"@vercel/frameworks@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@vercel/frameworks/-/frameworks-0.2.0.tgz#69fe5651b205b9f1df3534d9840c2ee1a67bba47"
-  integrity sha512-lEDiMnzzw9acbsl/0doN3zLqldlsdmdg1EY/jrKfrQIYpX3yiGBCLpAqUZ7CJaYaxZ/El0owxvR0eSZflnqFag==
+"@vercel/frameworks@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@vercel/frameworks/-/frameworks-1.3.0.tgz#6d5e4059ffb0a341e357c41b69917d3de2c164ef"
+  integrity sha512-guXALpQLhL0bCvIjUhHbYFyS8XusZQ6RtjqCTq0eJM6p8QLun4DI1TToqbIah/o7DY3s+RAyC2OUyOAY91qH4w==
+  dependencies:
+    "@iarna/toml" "2.2.3"
+    js-yaml "3.13.1"
 
-"@vercel/routing-utils@^1.9.2":
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/@vercel/routing-utils/-/routing-utils-1.9.2.tgz#3bfd1f59e88d9a81ca755fbf2996ea727087b080"
-  integrity sha512-6ECeHIaXJTdjhl5Oli3ad24YOpwtexHbXmTMVhtwEo69fTtrPkh6OQFR24MfCtdPRtBvaDxbi44hgj4k+rhv5Q==
+"@vercel/routing-utils@^2.1.8":
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/@vercel/routing-utils/-/routing-utils-2.1.8.tgz#6ddef8ed31d565815bab72bcfd9b63fa9a9a8db0"
+  integrity sha512-rng+qyQ0VpnBjO2R7GQlpAdEx+yyvrcEp6XNe+4q6e+oW0n2H6dm6SLFEBA6B1QmHX4OTTCkq1GIiKsK6ENw4Q==
   dependencies:
     path-to-regexp "6.1.0"
   optionalDependencies:
@@ -1228,6 +1236,14 @@ js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+js-yaml@3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
 
 js-yaml@^3.13.1:
   version "3.14.1"

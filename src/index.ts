@@ -95,7 +95,7 @@ async function build({
   const output = await createLambda({
     files: { ...extraFiles, ...(await glob('**', distPath)) },
     handler: 'bootstrap',
-    runtime: 'provided',
+    runtime: 'provided'
   })
 
   return { output }
