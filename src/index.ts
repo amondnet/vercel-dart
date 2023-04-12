@@ -67,7 +67,7 @@ async function build({
   })
   await fs.writeFile(
     path.join(tmp, 'pubspec.yaml'),
-    makePubspec(pubspec, RUNTIME_LOCAL_PKG),
+    makePubspec(pubspec, RUNTIME_PKG),
     'utf-8'
   )
 

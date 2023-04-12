@@ -5,7 +5,7 @@ export const RUNTIME_PKG = {
   git: {
     url: 'https://github.com/amondnet/vercel-dart-runtime',
     path: 'dart',
-    ref: 'f7a71bb52ba62723e280cc90830bcbd064510283'
+    ref: '725714f072f8c4473b094f0c53e5138bd1fa4776'
   },
 }
 export const RUNTIME_LOCAL_PKG = {
